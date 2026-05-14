@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Boom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_cineboom.jpeg" class="img-fluid" style="max-height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" style="color: whitesmoke;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cartelera.html" style="color: whitesmoke;">Cartelera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dulceria.html" style="color: whitesmoke;">Zona de snacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nosotros.html" style="color: whitesmoke;">Sobre nosotros</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-outline-light" href="login.html">Iniciar Sesión</a>
+                    <a class="btn btn-outline-light ms-3" href="Registro.html">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!-- Imagen de inicio tipo banner -->
+    <section class="hero-imagen text-white d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Sobre Nosotros</h1>
+        </div>
+    </section>
+    <br>
+    <div class="container py-4">
+        <h2>¿Quiénes somos?</h2>
+        <p id="parrafonosotros">
+            Somos un cine comprometido con llevar la magia a cada persona que cruza nuestras puertas. Nos enfocamos en crear un ambiente cómodo, moderno y accesible donde nuestros visitantes puedan desconectarse de la rutina y sumergirse en historias únicas. Nuestro equipo trabaja día a día para garantizar una atención cálida y una experiencia que supere las expectativas.
+        </p>
+        <br>
+        <h2>Nuestra historia</h2>
+        <p id="parrafonosotros">
+            Nuestro cine nació como un pequeño proyecto impulsado por la pasión por el cine y el entretenimiento. Iniciamos con una sola sala y recursos limitados, pero con un gran sueño: acercar las mejores películas a nuestra comunidad. Con el paso del tiempo, gracias al apoyo de nuestros clientes, fuimos creciendo e incorporando nuevas salas, tecnología de proyección avanzada y sonido envolvente.
+
+Hoy en día, nos hemos convertido en un espacio moderno que combina tradición y tecnología, manteniendo siempre la esencia con la que empezamos: ofrecer momentos memorables a través del cine.
+        </p>
+        <br>
+        
+        <!-- Conjunto de imagenes tipo carrusel -->
+        <section class="py-5">
+    <!-- Carousel -->
+            <div id="carruselnosotros" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselnosotros" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carruselnosotros" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carruselnosotros" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/salavacia2.jpeg" class="d-block w-100" class="img-fluid rounded" alt="Slide 1">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <img src="img/palomitas.jpeg" class="d-block w-100" class="img-fluid rounded" alt="Slide 2">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <img src="img/familiacine.jpg" class="d-block w-100" class="img-fluid rounded" alt="Slide 3">
+            </div>
+
+        </div>
+        <!-- flechas -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselnosotros" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselnosotros" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+        </section>
+    <br>
+    <!-- Conjunto de acordeones -->
+    <div class="container py-4">
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#Acordeon1">
+                        <p>Misión</p>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="Acordeon1">
+                    <div class="accordion-body">
+                        <p id="parrafoacordeon">Brindar a nuestros clientes una experiencia cinematográfica inolvidable, ofreciendo tecnología de alta calidad, comodidad excepcional y una variada cartelera que conecte con todo tipo de público, fomentando momentos de entretenimiento y unión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#Acordeon2">
+                        <p>Visión</p>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="Acordeon2">
+                    <div class="accordion-body">
+                        <p id="parrafoacordeon">Ser el cine líder en innovación y experiencia en la región, reconocido por la excelencia en servicio, calidad audiovisual y por convertirse en el lugar preferido para disfrutar del séptimo arte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Final de los acordeones -->
+</body>
+<br>
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Cine Boom</h5>
+                <p>La magia del cine en cada función para ti y tus seres queridos.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li><a href="cartelera.html" class="text-white text-decoration-none">Cartelera</a></li>
+                    <li><a href="dulceria.html" class="text-white text-decoration-none">Zona de snacks</a></li>
+                    <li><a href="nosotros.html" class="text-white text-decoration-none">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Atención al cliente</h5>
+                <p>Email: atencion@cineboom.com</p>
+                <p>Tel: +503 0000-0000</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Síguenos</h5>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>YouTube</p>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">© 2026 Cine Boom. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</html>

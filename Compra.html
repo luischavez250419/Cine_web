@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Boom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_cineboom.jpeg" class="img-fluid" style="max-height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="index.html" style="color: whitesmoke;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cartelera.html" style="color: whitesmoke;">Cartelera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dulceria.html" style="color: whitesmoke;">Zona de snacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nosotros.html" style="color: whitesmoke;">Sobre nosotros</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-outline-light" href="login.html">Iniciar Sesión</a>
+                    <a class="btn btn-outline-light ms-3" href="Registro.html">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <section class="content">
+        <div class="container mt-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <h2 class="text-center mb-4" style="color: #343a40;">¡Qué buena película elegiste!</h2>
+                    <p class="text-center text-muted mb-5">Completa los datos para finalizar tu compra de forma segura</p>
+                    
+                    <div class="row">
+                        <!-- Columna del formulario -->
+                        <div class="col-12 col-lg-8">
+                            <form class="border border-3 p-5 rounded-3 shadow-lg" action="confirmacion.html" method="post" style="background-color: #f8f9fa;">
+                                <!-- Información de envío -->
+                                <h5 class="mb-4" style="color: #495057;">Información de compra</h5>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="nombre" class="form-label fw-bold">Nombre completo</label>
+                                        <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Juan Pérez" required>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="email" class="form-label fw-bold">Correo electrónico</label>
+                                        <input type="email" class="form-control form-control-lg" id="email" placeholder="correo@ejemplo.com" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Sala" class="form-label fw-bold">Sala de la función</label>
+                                         <select class="form-select form-select-lg" id="Sala" required>
+                                        <option value="">-- Selecciona una sala --</option>
+                                        <option value="sala1">Sala de funciones 1</option>
+                                        <option value="sala2">Sala de funciones 2</option>
+                                        <option value="sala3">Sala de funciones 3</option>
+                                        <option value="sala4">Sala de funciones 4</option>
+                                        <option value="sala5">Sala de funciones 5</option>
+                                        <option value="sala6">Sala de funciones 6</option>
+                                         </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="boletos" class="form-label fw-bold">Cantidad de boletos</label>
+                                        <input type="number" class="form-control form-control-lg" id="boletos" required>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="telefono" class="form-label fw-bold">Teléfono de contacto</label>
+                                        <input type="tel" class="form-control form-control-lg" id="telefono" placeholder="+503 0000-0000" required>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <!-- Información de pago -->
+                                <h5 class="mb-4" style="color: #495057;">Información de Pago</h5>
+                                <div class="mb-3">
+                                    <label for="metodo" class="form-label fw-bold">Tipo de tarjeta</label>
+                                    <select class="form-select form-select-lg" id="metodo" required>
+                                        <option value="">-- Selecciona un tipo --</option>
+                                        <option value="visa">Visa</option>
+                                        <option value="mastercard">Mastercard</option>
+                                        <option value="amex">American Express</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="propietario" class="form-label fw-bold">Nombre en la tarjeta</label>
+                                    <input type="text" class="form-control form-control-lg" id="propietario" placeholder="JUAN PEREZ" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-8 mb-3">
+                                        <label for="tarjeta" class="form-label fw-bold">Número de tarjeta</label>
+                                        <input type="text" class="form-control form-control-lg" id="tarjeta" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <label for="codigo" class="form-label fw-bold">CVV</label>
+                                        <input type="text" class="form-control form-control-lg" id="codigo" placeholder="123" maxlength="4" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="mes" class="form-label fw-bold">Mes de vencimiento</label>
+                                        <select class="form-select form-select-lg" id="mes" required>
+                                            <option value="">Mes</option>
+                                            <option value="01">Enero (01)</option>
+                                            <option value="02">Febrero (02)</option>
+                                            <option value="03">Marzo (03)</option>
+                                            <option value="04">Abril (04)</option>
+                                            <option value="05">Mayo (05)</option>
+                                            <option value="06">Junio (06)</option>
+                                            <option value="07">Julio (07)</option>
+                                            <option value="08">Agosto (08)</option>
+                                            <option value="09">Septiembre (09)</option>
+                                            <option value="10">Octubre (10)</option>
+                                            <option value="11">Noviembre (11)</option>
+                                            <option value="12">Diciembre (12)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="año" class="form-label fw-bold">Año de vencimiento</label>
+                                        <select class="form-select form-select-lg" id="año" required>
+                                            <option value="">Año</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
+                                            <option value="2029">2029</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <!-- Seguridad -->
+                                <h5 class="mb-4" style="color: #495057;">Seguridad</h5>
+                                <div class="mb-4">
+                                    <label for="contraseña" class="form-label fw-bold">Contraseña de cuenta</label>
+                                    <input type="password" class="form-control form-control-lg" id="contraseña" placeholder="••••••••" required>
+                                </div>
+
+                                <div class="d-grid gap-2 mb-3">
+                                    <button type="submit" class="btn btn-success btn-lg fw-bold">Finalizar Compra</button>
+                                </div>
+                                <button type="reset" class="btn btn-outline-secondary btn-lg w-100">Limpiar formulario</button>
+                            </form>
+                        </div>
+
+                        <!-- Columna del resumen -->
+                        <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                            <div class="card border border-3 shadow-lg sticky-top" style="top: 20px;">
+                                <div class="card-header bg-dark text-white">
+                                    <h5 class="mb-0">Resumen de Compra</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <h6 class="text-muted mb-2">Película seleccionada:</h6>
+                                        <p class="fw-bold mb-0">¡Que la disfrutes!</p>
+                                    </div>
+                                    <hr>
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-muted">Subtotal:</td>
+                                                    <td class="text-end fw-bold">$8.99</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-muted">Reservación:</td>
+                                                    <td class="text-end fw-bold">$5.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-muted">Impuesto:</td>
+                                                    <td class="text-end fw-bold">$1.12</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr class="border-top border-3">
+                                                    <th class="pt-3">Total:</th>
+                                                    <th class="text-end pt-3" style="font-size: 1.25rem; color: #28a745;">$15.11</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <hr>
+                                    <div class="alert alert-info d-flex align-items-center mb-3" role="alert">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Cine Boom</h5>
+                <p>La magia del cine en cada función para ti y tus seres queridos.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li><a href="cartelera.html" class="text-white text-decoration-none">Cartelera</a></li>
+                    <li><a href="dulceria.html" class="text-white text-decoration-none">Zona de snacks</a></li>
+                    <li><a href="nosotros.html" class="text-white text-decoration-none">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Atención al cliente</h5>
+                <p>Email: atencion@cineboom.com</p>
+                <p>Tel: +503 0000-0000</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Síguenos</h5>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>YouTube</p>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">© 2026 Cine Boom. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</html>
